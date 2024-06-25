@@ -1,11 +1,14 @@
 #include <stdio.h>
 
 /**
- * The program print lower then upper case letters
+ *Main - entry point
  *
+ *The program print lower then upper case letters
+
  * Return: Always 0 (Success)
  */
 int main(void)
+
 {
 	char cn = 'a';
 
@@ -24,6 +27,6 @@ int main(void)
 			cn++;
 		}
 		putchar('\n');
-		
+
 		return (0);
 }

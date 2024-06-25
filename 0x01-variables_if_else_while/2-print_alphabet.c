@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * print alphabet in lower case
+ * main - Entry point
  *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	/*variable declaration*/
+    char letter = 'a';
 
-	char ch = 'a';
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		ch++;
-	}
-	putchar('\n');
+    while (letter <= 'z')
+    {
+        putchar(letter);
+        letter++;
+    }
+    putchar('\n');  // Print the newline character
 
-	return (0);
+    return (0);
 }

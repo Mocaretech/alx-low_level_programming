@@ -14,10 +14,9 @@
 int main(void)
 
 {
-
 	int num = 0;
 
-    while (num <= 9)
+	while (num <= 9)
     {
 	    putchar('0' + num);
 	num++;
@@ -26,6 +25,4 @@ int main(void)
     putchar('\n');
 
     return 0;
-
 }
-

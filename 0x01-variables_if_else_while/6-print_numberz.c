@@ -3,11 +3,13 @@
 /**
  * This command would print single digit from zero to nine
  */
-int main()
+int main(void)
+	int num = 0;
 {
-	int putchar = int ch
+	while (num <= '9'; num++)
 	{
-		ch = '0'
-			while (ch <= 9; ch++)
-			{
-				print(ch)
+		putchar(num)
+	}
+	return(0);
+}
+

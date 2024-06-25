@@ -10,12 +10,12 @@
  */
 int main(void)
 {
-    int letter = 122;  /* ASCII value for 'z' */
+	int letter = 122;  /* ASCII value for 'z' */
 
     while (letter >= 97)  /* ASCII value for 'a' */
     {
-        putchar(letter);  /* Print the current letter */
-        letter--;  /* Move to the previous letter */
+	    putchar(letter);  /* Print the current letter */
+	letter--;  /* Move to the previous letter */
     }
 
     putchar('\n');  /* Print the newline character */

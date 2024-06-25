@@ -1,22 +1,28 @@
 #include <stdio.h>
 
 /**
- * Print lower case with exception
+ * main - Entry point of the program
+ *
+ * This program prints the alphabet in lowercase, except 'q' and 'e',
+ * followed by a new line. It uses only the putchar function exactly twice.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch = a;
-	while (ch <= 'z')
-	{
-		if (ch !='q' && ch != 'e')
-		{
-			putchar(ch);
-		}
-		ch++;
-	}
-	putchar('\n');
-	return (0);
-}
-		
+    char letter = 'a';
 
+    while (letter <= 'z')
+    {
+        if (letter != 'q' && letter != 'e')
+        {
+            putchar(letter);
+        }
+        letter++;
+    }
+
+    putchar('\n');  // Print the newline character
+
+    return (0);
+}
 

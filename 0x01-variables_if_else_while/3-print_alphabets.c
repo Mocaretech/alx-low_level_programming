@@ -4,11 +4,9 @@
  *Main - entry point
  *
  *The program print lower then upper case letters
-
  * Return: Always 0 (Success)
  */
 int main(void)
-
 {
 	char cn = 'a';
 

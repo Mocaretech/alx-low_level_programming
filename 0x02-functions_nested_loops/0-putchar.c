@@ -3,16 +3,11 @@
 /**
  * main point
  *
- * Return: always 0
+ * This will print on a new line
  */
-int main(){
-	int count = 1;
-
-	while (count < 5){
-		printf("_putchar\n");
-		count++;
-	}
-
-		return 0;
-	}
+int main(void)
+{
+	printf("_putchar\n");
+	return (0);
+}
 

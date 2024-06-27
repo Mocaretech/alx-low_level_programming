@@ -3,9 +3,9 @@
 
 /**
  * _islower - Checks if a character is lowercase
- * c: The character to check.
+ * @c: The character to check.
  *
- * Description:This function checks if the character passed to it
+ * Description: This function checks if the character passed to it
  * is a lower case letter(from 'a' to 'z'
  * Return: 1 if the character is a lowercase, 0 otherwise
  */

@@ -6,8 +6,8 @@
  * c: The character to check.
  *
  * Description:This function checks if the character passed to it
- * 	is a lower case letter(from 'a' to 'z'
- * 	Return: 1 if the character is a lowercase, 0 otherwise
+ * is a lower case letter(from 'a' to 'z'
+ * Return: 1 if the character is a lowercase, 0 otherwise
  */
 int _islower(int c)
 {

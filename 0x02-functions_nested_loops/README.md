@@ -1,1 +1,1 @@
-This is the program that would print more of file on while loop 
+This prject cotains a prograam that prints _putchar followed by a newline

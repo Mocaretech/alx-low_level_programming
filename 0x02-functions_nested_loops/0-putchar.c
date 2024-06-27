@@ -1,13 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
+/* 0-putchar.c*/
+#include "main.h" /*Include the header file*/
+
 /**
- * main point
+ * main - Entry point
  *
- * This will print on a new line
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	printf("_putchar\n");
-	return (0);
+	char *str = "_putchar";
+	while (*str)
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
+	return(0);
 }
-

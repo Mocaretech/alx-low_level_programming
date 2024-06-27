@@ -5,7 +5,7 @@
  *
  * This will print alphabet in lower case followed by a new line
  */
-int main(void)
+void print_alphabet(void)
 {
 	char letter = 'a';
 
@@ -16,5 +16,5 @@ int main(void)
 	}
 
 	_putchar('\n');
-	return (0);
+	return;
 }

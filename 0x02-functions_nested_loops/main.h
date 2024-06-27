@@ -5,5 +5,7 @@
 int _putchar(char c); /* Function prototype for _putchar */
 void print_alphabet(void);
 void print_alphabet_x10(void);
+int _putchar(char c); /*prototype for _putchar)*/
+int _islower(int c); /*prototype for _islower */
 
 #endif /* MAIN_H */

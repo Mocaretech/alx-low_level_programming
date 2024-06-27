@@ -8,7 +8,7 @@
  *
  * The program will print lower case alphabet using putchar library
  */
-void print_alphabet(void)
+void print_alphabet(void) /* This will orint alphabet a to z in lower case*/
 {
 	char letter = 'a';
 

@@ -2,13 +2,12 @@
 #include "main.h"
 
 /**
- *Print lower_case -  This will print alphabet in lower case
- * Description: This function print all lower case from 'a' th 'z'
- * using _putchar function and then print new line
+ * print_alphabet - Prints the alphabet in sentence
  *
- * The program will print lower case alphabet using putchar library
+ * Description: Thisfunction prints all lowercase letters from 'a'to 'z'
+ * using the _putchar function, followed by a newline character
  */
-void print_alphabet(void) /* This will orint alphabet a to z in lower case*/
+void print_alphabet(void)
 {
 	char letter = 'a';
 

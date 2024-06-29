@@ -9,4 +9,5 @@ int _islower(int c); /*prototype for _islower */
 int _isalpha(int c); /*prototype for _isalpha */
 int print_sign(int n);
 int _abs(int n);
+int print_last_digit(int);
 #endif /* MAIN_H */

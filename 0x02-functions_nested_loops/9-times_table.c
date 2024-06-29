@@ -1,4 +1,4 @@
-/* 9-times_table.c */ 
+/*9-times_table.c */ 
 #include "main.h"
 /**
  * times_table - Prints the 9 times table, starting with 0.
@@ -11,13 +11,13 @@
 void times_table(void)
 {
 	int row, col, product;
-	
+
 	for (row = 0; row <= 9; row++)  /* Loop through rows from 0 to 9 */
 	{
 		for (col = 0; col <= 9; col++)  /* Loop through columns from 0 to 9 */
 		{
 			product = row * col;  /* Calculate the product of row and column */
-			
+
 			if (col != 0)  /* For columns other than the first in each row */
 			{
 				_putchar(',');  /* Print a comma */
@@ -27,12 +27,12 @@ void times_table(void)
 					_putchar(' ');
 				}
 			}
-			
+
 			if (product < 10)  /* Print single-digit products */
 			{
 				_putchar('0' + product);
 			}
-			
+
 			else  /* Print two-digit products */
 			{
 				_putchar('0' + (product / 10));  /* Print tens place */

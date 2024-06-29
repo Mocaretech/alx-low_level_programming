@@ -8,5 +8,5 @@ void print_alphabet_x10(void);
 int _islower(int c); /*prototype for _islower */
 int _isalpha(int c); /*prototype for _isalpha */
 int print_sign(int n);
-
+int _abs(int n);
 #endif /* MAIN_H */

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/* 
+/*
  * main - Entry point of the program.
  *
- * Description: Finds and prints the sum of the even-valued terms in the 
+ *Description: Finds and prints the sum of the even-valued terms in the
  * Fibonacci sequence whose values do not exceed 4,000,000.
  *
  * Return: Always 0.
@@ -34,5 +34,5 @@ int main(void)
 	/* Print the sum of the even-valued terms */
 	printf("%lu\n", sum);
 
-	return 0; /* Indicate that the program finished successfully */
+	return (0); /* Indicate that the program finished successfully */
 }

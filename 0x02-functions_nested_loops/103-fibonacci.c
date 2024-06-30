@@ -2,7 +2,7 @@
 
 /*
  * main - Entry point of the program.
- *
+ *@fib : sum of fibonacci
  *Description: Finds and prints the sum of the even-valued terms in the
  * Fibonacci sequence whose values do not exceed 4,000,000.
  *

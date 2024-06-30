@@ -11,11 +11,11 @@ int main(void)
 	unsigned long fib1_high, fib1_low, fib2_high, fib2_low;
 	unsigned long high, low;
 	int count;
-	
+
 	printf("%lu, %lu", fib1, fib2);
-	
+
 	for (count = 2; count < 98; count++)
-	
+
 	{
 		if (fib1 + fib2 < fib1)
 		{

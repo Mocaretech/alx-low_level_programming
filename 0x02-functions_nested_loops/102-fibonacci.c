@@ -11,14 +11,14 @@ int main(void)
 {
 	int count;
 	unsigned long fib1 = 1, fib2 = 2, next;
-	
+
 	printf("%lu, %lu", fib1, fib2); /* Print the first two Fibonacci numbers*/
-	
-	for (count = 2; count < 50; count++) /* We already printed 2, so start from 2*/
+
+	for (count = 2; count < 50; count++) /* We  printed 2, so start from 2*/
 	{
 		next = fib1 + fib2; /* Calculate the next Fibonacci number*/
 		printf(", %lu", next); /* Print the next Fibonacci number*/
-		
+
 		fib1 = fib2; /* Update fib1 to the last fib2*/
 		fib2 = next; /* Update fib2 to the new next*/
 	}

@@ -5,7 +5,7 @@
  *       character, followed by a new line.
  *@str: A pointer to the string to be printed.
  *
- * This function prints characters from the string at even indices (0, 2, 4, ...).
+ * This function prints characters from the string at even indices (.
  *It continues until it encounters the null terminator.
  */
 void puts2(char *str)

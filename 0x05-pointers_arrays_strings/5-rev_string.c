@@ -17,13 +17,13 @@ void rev_string(char *s)
 	/* Determine the length of the string */
 
 	while (s[length] != '\0')
-	
+
 	{
 		length++;
 	}
 
 	/* Swap characters from the ends towards the center */
-	
+
 	for (i = 0; i < length / 2; i++)
 
 	{

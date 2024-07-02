@@ -2,29 +2,35 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**
- *  * main - Generates a random password for the 101-crackme program
- *   *
- *    * Return: Always 0 (Success)
- *     */
+/* Function prototype to determine target value */
+int calc_target_value();
+
 int main(void)
 {
-	int i, length = 12;  /* Length of the password */
-	char password[13];   /* One extra for the null terminator */
-	const char charset[] = "abcdefghijklmnopqrstuvwxyz" "ABCDEFGHIJKLMNOPQRSTUVWXY" "0123456789";
+	char password[8];  /* Password length deduced to 8 for this example */
+	int sum = 0;       /* Initialize sum of ASCII values */
+	int i;             /* Loop counter */
 
-	/* Initialize random number generator */
 	srand(time(NULL));
-	/* Generate random password */
-	for (i = 0; i < length; i++)
-	{
-		password[i] = charset[rand() % (sizeof(charset) - 1)];
-	}
 
-	password[length] = '\0';  /* Null-terminate the string */
+	int target = calc_target_value(); /* Placeholder for reverse-engineered target value */
+
+	for (i = 0; i < 7; i++)
+	{
+		password[i] = (rand() % 78) + 48; /* Random printable ASCII char */
+		sum += password[i];
+	}
+	password[7] = target - sum;
+
+	password[8] = '\0';
 
 	printf("%s\n", password);
 
 	return 0;
 }
 
+int calc_target_value()
+{
+
+	    return (500); /* Example value, replace with actual target */
+}

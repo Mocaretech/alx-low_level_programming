@@ -8,7 +8,7 @@
  */
 int _atoi(char *s)
 {
-	int result = 0;     /* Initialize result to 0 */
+	int res = 0;     /* Initialize result to 0 */
 	int sign = 1;       /* Initialize sign to positive */
 	int started = 0;    /* To check if conversion started */
 	int max_div_10 = 214748364;  /* INT_MAX / 10 */
@@ -24,11 +24,11 @@ int _atoi(char *s)
 		else if (*s >= '0' && *s <= '9')
 		{
 			started = 1; /* Mark that we have started conversion */
-			if (result > max_div_10 || (result == max_div_10 && (*s -'0') > max_mod_10))
+			if (res > max_div_10 || (res == max_div_10 && (*s -'0') > max_mod_10))
 			{
 				return (sign == 1 ? 2147483647 : -2147483648);
 			}
-			result = result * 10 + (*s - '0');
+			res = res * 10 + (*s - '0');
 		}
 
 		else if (started)
@@ -38,5 +38,5 @@ int _atoi(char *s)
 	}
 
 	/* Apply the sign to the result */
-	return (sign * result);
+	return (sign * res);
 }

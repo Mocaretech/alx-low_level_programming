@@ -24,5 +24,5 @@ char *_strcpy(char *dest, const char *src)
 
 	*dest = '\0'; /* Copy the null terminator to dest */
 
-	return ptr; /* Return the pointer to the start of dest */
+	return (ptr); /* Return the pointer to the start of dest */
 }

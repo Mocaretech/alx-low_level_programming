@@ -1,42 +1,46 @@
-#include "main.h"
+ #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-/**
- * _atoi - Convert a string to an integer.
- * @s: The string to be converted.
- *
- * Return: The integer value of the string.
- */
-int _atoi(char *s)
+/* Function prototype to determine target value */
+int calc_target_value();
+
+int main(void)
 {
-	int res = 0;     /* Initialize result to 0 */
-	int sign = 1;       /* Initialize sign to positive */
-	int started = 0;    /* To check if conversion started */
-	int max_div_10 = 214748364;  /* INT_MAX / 10 */
-	int max_mod_10 = 7;          /* INT_MAX % 10 */
-
-
-	while (*s != '\0')
+	char password[8];  /* Password length deduced to 8 for this example */
+	int sum = 0;       /* Initialize sum of ASCII values */
+	int i;             /* Loop counter */
+	int target;        /* Target value for password calculation */
+	
+	/* Initialize random number generator */
+	srand(time(NULL));
+	
+	/* Target value for password calculation - modify based on analysis */
+	target = calc_target_value(); /* Placeholder for reverse-engineered target value */
+	
+	/* Generate first 7 characters of the password */
+	for (i = 0; i < 7; i++)
 	{
-		/* Check for '-' and update sign */
-		if (*s == '-')
-			sign *= -1;
-		/* Check for digit and convert it */
-		else if (*s >= '0' && *s <= '9')
-		{
-			started = 1; /* Mark that we have started conversion */
-			if (res > max_div_10 || (res == max_div_10 && (*s - '0') > max_mod_10))
-			{
-				return (sign == 1 ? 2147483647 : -2147483648);
-			}
-			res = res * 10 + (*s - '0');
-		}
-
-		else if (started)
-			break;
-
-		s++; /* Move to the next character */
+		password[i] = (rand() % 78) + 48; /* Random printable ASCII char */
+		sum += password[i];
 	}
+	
+	/* Update sum with ASCII value */
+	password[7] = target - sum;
+	
+	/* Null-terminate the string */
+	password[8] = '\0';
+	
+	/* Print the generated password */
+	
+	printf("%s\n", password);
+	
+	return (0);
+}
 
-	/* Apply the sign to the result */
-	return (sign * res);
+/* Placeholder function to determine target value for password */
+int calc_target_value()
+{
+	/* Reverse engineer the target value from `101-crackme` */
+	return (500); /* Example value, replace with actual target */
 }

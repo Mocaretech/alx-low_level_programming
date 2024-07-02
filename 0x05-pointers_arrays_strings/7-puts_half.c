@@ -7,12 +7,13 @@
  *This function prints the second half of the string. If the number of
  *characters is odd, it starts from index (length_of_the_string - 1) / 2 + 1.
  */
- 
+
 void puts_half(char *str)
 {
 	int length = 0;
 	int start;
 	int i;
+
 	while (str[length] != '\0')
 
 	{
@@ -24,6 +25,7 @@ void puts_half(char *str)
 	{
 		start = length / 2;
 	}
+
 	else
 	{
 		start = (length - 1) / 2 + 1;

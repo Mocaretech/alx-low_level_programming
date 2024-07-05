@@ -10,12 +10,12 @@ void print_buffer(char *b, int size)
 
 	{
 		printf("\n");
-		
+
 		return;
 	}
 
 	for (offset = 0; offset < size; offset += 10)
-	
+
 	{
 		/* Print the offset*/
 

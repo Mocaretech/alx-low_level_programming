@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strcat - Concatenates the string pointed to by src to the end of the string pointed to by dest
+ * _strcat - Concatenates the string pointed to by src to by dest
  * @dest: Destination string to which the src string will be appended
  * @src: Source string to append to dest
  *
@@ -28,5 +28,5 @@ char *_strcat(char *dest, const char *src)
 
 	/* Add null terminator at the end of concatenated string*/
 	*dest_end = '\0';
-	return dest;
+	return (dest);
 }

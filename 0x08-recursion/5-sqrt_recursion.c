@@ -36,5 +36,5 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (_sqrt_helper(n, 1));  /* Call helper function with initial guess of 1 */
+	return (_sqrt_helper(n, 1));  /* Call helper function with initial of 1 */
 }

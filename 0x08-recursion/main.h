@@ -1,0 +1,22 @@
+/*main.h*/
+#ifndef MAIN_H
+#define MAIN_H
+
+/**
+ * _puts_recursion - Prints a string followed by a new line
+ * @s: The string to be printed
+ *
+ * Return: void
+ */
+void _puts_recursion(char *s);
+
+/**
+ * _putchar - Writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1, On error -1
+ */
+int _putchar(char c);
+
+#endif /* MAIN_H */
+

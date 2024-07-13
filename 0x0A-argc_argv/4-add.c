@@ -14,14 +14,18 @@ int main(int argc, char *argv[])
 	int i, j;
 	int sum = 0;
 
+	/* If no additional arguments, print 0 */
 	if (argc == 1)
 	{
 		printf("0\n");
-		return(0);
+		return (0);
 	}
 
+	/* Iterate through each argument */
 	for (i = 1; i < argc; i++)
 	{
+
+		/* Check if each character in the argument is a digit */
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (!isdigit(argv[i][j]))
@@ -30,9 +34,11 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+		/* Convert argument to integer and add to sum */
 		sum += atoi(argv[i]);
 	}
 
+	/* Print the result */
 	printf("%d\n", sum);
 	return (0);
 }

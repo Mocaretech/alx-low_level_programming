@@ -1,9 +1,9 @@
 #include "main.h"
+#include <stddef.h>
 
 char *_strstr(char *haystack, char *needle)
 {
 	char *h, *n;
-	if (!*needle)
 		return haystack;
 	while (*haystack) 
 	{

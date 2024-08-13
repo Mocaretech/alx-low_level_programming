@@ -5,7 +5,7 @@
 /**
  * append_text_to_file - Appends text at the end of a file.
  * @filename: The name of the file.
- * @text_content: The NULL-terminated string to add at the end of the file.
+ * @text_content: The NULL-terminated string to add at the EOF.
  *
  * Return: 1 on success and -1 on failure.
  */

@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 	/* Open file with specified permissions, creating it if it doesn't */
-	d = fopen(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	d = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (d == -1)
 		return (-1);
 

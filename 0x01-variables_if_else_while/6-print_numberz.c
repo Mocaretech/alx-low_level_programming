@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Entry point of the program
  *
  * This program prints all single-digit numbers of base 10 starting from 0,
@@ -23,5 +22,5 @@ int main(void)
 	    num++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
